@@ -1,0 +1,17 @@
+<!-- <h1>new song </h1>
+
+ <%= flash.now[:errors] %>
+ <%= form_for(@song) do |f| %>
+ <%= f.label :title %>
+ <%= f.text_field :title %>
+ <%= f.label :artist %>
+ <%= f.text_field :artist %>
+ <%= f.submit %>
+
+ <% end %>
+pull this code out and replace with partial
+-->
+
+
+ <h1>New Song</h1>
+  <%= render partial: 'form' %>

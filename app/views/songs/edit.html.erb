@@ -1,0 +1,18 @@
+
+<!--<h1> Edit a Song </h1>
+
+ <%= flash.now[:errors] %>
+
+ <%= form_for(@song) do |f| %>
+ <%= f.label :title %>
+ <%= f.text_field :title %>
+ <%= f.label :artist %>
+ <%= f.text_field :artist %>
+ <%= f.submit %>
+ <% end %>
+
+take out the form stuff and add in the partial
+the partial file begins with an underscore and it's kept in the songs folder under views -->
+
+<h1>Edit a Song</h1>
+ <%= render partial: 'form' %>
